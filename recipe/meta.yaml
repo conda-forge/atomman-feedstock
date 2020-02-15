@@ -10,7 +10,7 @@ source:
   sha256: 98ab612644e1c89dd1f6a9747977ca78117e2430b18a763887cf433526f73ee0
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [py2k]
 
@@ -26,7 +26,7 @@ requirements:
     - xmltodict
     - datamodeldict
     - numpy >=1.15 
-    - matplotlib
+    - matplotlib-base
     - scipy
     - pandas
     - cython
