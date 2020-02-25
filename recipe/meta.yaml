@@ -23,6 +23,7 @@ requirements:
     - cython
   run:
     - python
+    - pip
     - xmltodict
     - datamodeldict
     - numpy >=1.15 
@@ -36,6 +37,8 @@ requirements:
 test:
   imports:
     - atomman
+  commands:
+    - pip check
 
 about:
   home: https://github.com/usnistgov/atomman
