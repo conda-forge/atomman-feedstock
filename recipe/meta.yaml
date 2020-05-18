@@ -1,5 +1,5 @@
 {% set name = "atomman" %}
-{% set version = "1.3.1" %}
+{% set version = "1.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 98ab612644e1c89dd1f6a9747977ca78117e2430b18a763887cf433526f73ee0
+  sha256: 840acea340f13a379589f5c457e8b733a4087df581aff3ac6823bcb0ba1419dd
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py2k]
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - pip
     - xmltodict
     - datamodeldict
-    - numpy >=1.15 
+    - numpy >=1.15
     - matplotlib-base
     - scipy
     - pandas
@@ -45,7 +45,7 @@ about:
   license: OTHER
   license_family: OTHER
   license_file: LICENSE.TXT
-  summary: 'Atomistic Manipulation Toolkit'
+  summary: Atomistic Manipulation Toolkit
 
   description: |
     atomMan: the Atomistic Manipulation Toolkit is a Python library for 
