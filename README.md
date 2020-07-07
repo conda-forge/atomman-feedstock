@@ -5,7 +5,7 @@ Home: https://github.com/usnistgov/atomman
 
 Package license: OTHER
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Atomistic Manipulation Toolkit
 
