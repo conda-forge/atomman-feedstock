@@ -5,9 +5,13 @@ Home: https://github.com/usnistgov/atomman
 
 Package license: OTHER
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atomman-feedstock/blob/master/LICENSE.txt)
 
 Summary: Atomistic Manipulation Toolkit
+
+Development: https://github.com/usnistgov/atomman
+
+Documentation: https://github.com/usnistgov/atomman
 
 atomMan: the Atomistic Manipulation Toolkit is a Python library for
 creating, representing, manipulating, and analyzing large-scale atomic
