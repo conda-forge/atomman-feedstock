@@ -1,5 +1,5 @@
 {% set name = "atomman" %}
-{% set version = "1.3.7" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c12533f4f6d6cdaf507410c04b8875edf4df2ffcf0490ddfbfd726a8c94b0129
+  sha256: eccb827b87394d8ff69688a375c51172172d847eb726f3b18cfdbb2344c57b49
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<37]
+  skip: true  # [py<37 or python_impl == 'pypy']
 
 requirements:
   build:
@@ -33,7 +33,7 @@ requirements:
     - cython
     - numericalunits
     - toolz
-    - potentials =0.2.8
+    - potentials =0.3.0
 
 test:
   imports:
@@ -43,8 +43,7 @@ test:
 
 about:
   home: https://github.com/usnistgov/atomman
-  license: OTHER
-  license_family: OTHER
+  license: NIST-PD
   license_file: LICENSE.TXT
   summary: Atomistic Manipulation Toolkit
 
@@ -54,7 +53,7 @@ about:
     systems of atoms. The focus of the package is to facilitate the rapid 
     design and development of simulations that are fully documented and 
     easily adaptable to new potentials, configurations, etc. 
-  doc_url: https://github.com/usnistgov/atomman
+  doc_url: https://www.ctcms.nist.gov/potentials/atomman/
   dev_url: https://github.com/usnistgov/atomman
 
 extra:
