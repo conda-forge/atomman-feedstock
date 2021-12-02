@@ -1,5 +1,5 @@
 {% set name = "atomman" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4cbca8c30bf2afd1b45bf17dac2a8d30b7d7cb1e87d10112528db73dc6392457
+  sha256: 492a25a2e3ae2e20fb20a2cad08f51ddad66358b6cbef65db9d09505794fb8aa
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37 or python_impl == 'pypy']
 
@@ -33,7 +33,7 @@ requirements:
     - cython
     - numericalunits
     - toolz
-    - potentials =0.3.1
+    - potentials =0.3.2
 
 test:
   imports:
