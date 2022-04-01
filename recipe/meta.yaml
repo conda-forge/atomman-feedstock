@@ -26,6 +26,7 @@ requirements:
     - pip
     - ase
     - pymatgen
+    - phonopy
     - xmltodict
     - datamodeldict
     - numpy >=1.15
