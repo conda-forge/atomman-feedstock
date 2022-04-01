@@ -24,6 +24,7 @@ requirements:
   run:
     - python
     - pip
+    - ase
     - xmltodict
     - datamodeldict
     - numpy >=1.15
