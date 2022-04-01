@@ -36,7 +36,7 @@ requirements:
     - cython
     - numericalunits
     - toolz
-    - potentials =0.3.2
+    - potentials =0.3.3
 
 test:
   imports:
