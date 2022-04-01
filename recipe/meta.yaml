@@ -1,5 +1,5 @@
 {% set name = "atomman" %}
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 492a25a2e3ae2e20fb20a2cad08f51ddad66358b6cbef65db9d09505794fb8aa
+  sha256: cf684566fb668701bfbe7cb85f356f6e72ee71719a09fb6a6ba833115d1bee64
 
 build:
   number: 0
