@@ -1,0 +1,28 @@
+From 5cb653a0da0bb5536176fedbd0ce0e98a83496a5 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <janssen@lanl.gov>
+Date: Thu, 15 Dec 2022 08:53:21 -0700
+Subject: [PATCH] fix cython
+
+---
+ setup.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 4f32030..6a7253f 100644
+--- a/setup.py
++++ b/setup.py
+@@ -1,4 +1,5 @@
+ import os
++import sys
+ from setuptools import setup, find_packages
+ from setuptools.extension import Extension
+ 
+@@ -15,7 +16,7 @@
+               Extension("*", ["atomman/defect/*" + EXT])]
+ 
+ if USE_CYTHON:
+-    extensions = cythonize(extensions)
++    extensions = cythonize(extensions, language_level=sys.version_info[0], force=True)
+ 
+ def getversion():
+     """Fetches version information from VERSION file"""
