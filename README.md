@@ -1,11 +1,11 @@
-About atomman
-=============
+About atomman-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atomman-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/usnistgov/atomman
 
 Package license: NIST-PD
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atomman-feedstock/blob/main/LICENSE.txt)
 
 Summary: Atomistic Manipulation Toolkit
 
