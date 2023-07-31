@@ -1,7 +1,7 @@
 {% set name = "atomman" %}
 {% set version = "1.4.10" %}
 
-package:
+package: 
   name: {{ name|lower }}
   version: {{ version }}
 
