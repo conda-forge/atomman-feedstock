@@ -12,7 +12,7 @@ source:
     - setup.patch
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<=37 or python_impl == 'pypy']
 
@@ -38,7 +38,9 @@ requirements:
     - cython
     - numericalunits
     - toolz
-    - potentials >=0.3.6
+    - requests
+    - yabadaba
+    - potentials >=0.3.7
 
 test:
   imports:
