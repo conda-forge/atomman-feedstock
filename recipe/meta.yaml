@@ -41,7 +41,7 @@ requirements:
     - toolz
     - requests
     - yabadaba
-    - potentials
+    - potentials >=0.3.8
 
 test:
   imports:
