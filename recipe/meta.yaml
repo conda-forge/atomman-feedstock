@@ -24,6 +24,7 @@ requirements:
     - python
     - pip
     - cython
+    - setuptools
   run:
     - python
     - pip
@@ -41,7 +42,7 @@ requirements:
     - toolz
     - requests
     - yabadaba
-    - potentials >=0.3.8
+    - potentials >=0.4.0
 
 test:
   imports:
