@@ -1,13 +1,13 @@
 {% set name = "atomman" %}
-{% set version = "1.4.11" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c0124e59e0fa7330343b2ca9cdae1138052702b3a17cf36d61e5ff020ee10c4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 01573e3fc30a870c39bcdbc1a7e225fb734004071aa4d484bfa572097d9813fb
   
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - python
     - pip
     - cython
+    - setuptools
   run:
     - python
     - pip
@@ -39,7 +40,7 @@ requirements:
     - toolz
     - requests
     - yabadaba
-    - potentials >=0.3.8
+    - potentials >=0.4.0
 
 test:
   imports:
