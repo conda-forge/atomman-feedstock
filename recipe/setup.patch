@@ -1,6 +1,6 @@
-From b0e2c86e67340cb3659fd5aae076c159d3a9562e Mon Sep 17 00:00:00 2001
+From 20e65f1416bcf1c8d02d463d16b36b6f34ca4b24 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Thu, 15 Dec 2022 09:17:24 -0700
+Date: Wed, 26 Feb 2025 10:21:10 +0100
 Subject: [PATCH] Update setup.py
 
 ---
@@ -8,7 +8,7 @@ Subject: [PATCH] Update setup.py
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/setup.py b/setup.py
-index 581cabc..536c56f 100644
+index 8409993..ba3b097 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -1,4 +1,5 @@
