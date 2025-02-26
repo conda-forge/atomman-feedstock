@@ -1,7 +1,7 @@
-From 20e65f1416bcf1c8d02d463d16b36b6f34ca4b24 Mon Sep 17 00:00:00 2001
-From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Wed, 26 Feb 2025 10:21:10 +0100
-Subject: [PATCH] Update setup.py
+From 6eeabaa9890ed10983f6ac52070b65189210ea8f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jan=20Jan=C3=9Fen?= <janssen@mpie.de>
+Date: Wed, 26 Feb 2025 10:38:24 +0100
+Subject: [PATCH] setup
 
 ---
  setup.py | 3 ++-
