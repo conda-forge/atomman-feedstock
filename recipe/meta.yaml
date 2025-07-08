@@ -1,5 +1,5 @@
 {% set name = "atomman" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 01573e3fc30a870c39bcdbc1a7e225fb734004071aa4d484bfa572097d9813fb
-  
+  sha256: f809b485da7702128e28d2766ff64c80b1797e936b85f7291450b96a465ef1da
+
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<=38 or python_impl == 'pypy']
 
@@ -40,7 +40,7 @@ requirements:
     - toolz
     - requests
     - yabadaba
-    - potentials >=0.4.0
+    - potentials >=0.4.1
 
 test:
   imports:
