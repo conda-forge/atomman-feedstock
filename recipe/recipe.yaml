@@ -1,0 +1,71 @@
+schema_version: 1
+
+context:
+  name: atomman
+  version: "1.5.4"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 75b440bd88ed3fa1375fb4a5cfcf7143ddbc8d24f288889da9b3b690607bd811
+
+build:
+  number: 1
+  skip: match(python, "<=3.8") or python_impl == 'pypy'
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+  host:
+    - python
+    - pip
+    - cython
+    - setuptools
+  run:
+    - python
+    - pip
+    - ase
+    - pymatgen
+    - phonopy
+    - xmltodict
+    - datamodeldict
+    - numpy >=1.15
+    - matplotlib-base
+    - scipy
+    - pandas
+    - cython
+    - numericalunits
+    - toolz
+    - requests
+    - yabadaba
+    - potentials >=0.4.1
+
+tests:
+  - python:
+      imports:
+        - atomman
+      pip_check: true
+
+about:
+  license: NIST-PD
+  license_file: LICENSE.TXT
+  summary: Atomistic Manipulation Toolkit
+  description: |
+    atomMan: the Atomistic Manipulation Toolkit is a Python library for
+    creating, representing, manipulating, and analyzing large-scale atomic
+    systems of atoms. The focus of the package is to facilitate the rapid
+    design and development of simulations that are fully documented and
+    easily adaptable to new potentials, configurations, etc.
+  homepage: https://github.com/usnistgov/atomman
+  repository: https://github.com/usnistgov/atomman
+  documentation: https://www.ctcms.nist.gov/potentials/atomman/
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
+    - lmhale99
